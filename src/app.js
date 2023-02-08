@@ -15,7 +15,7 @@ app.get('/products', async (req, res) => {
   res.send(products);
 });
 
-app.get('/products/:pid', async (req, res) => {
+app.get('/products/:id', async (req, res) => {
   const product = await admin.getProductById(req.params);
   res.send(product);
 });
